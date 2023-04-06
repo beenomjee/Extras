@@ -1,6 +1,6 @@
 import { Home, Contact } from './modules'
 import { Button, Footer, Header } from './components'
-import { Logo } from './assets'
+import { Logo, Mic, Rating } from './assets'
 import { store } from './store'
 
 const App = () => {
@@ -12,6 +12,8 @@ const App = () => {
       <Footer></Footer>
       <Header></Header>
       <img src={Logo} alt="####" />
+      <img src={Rating} alt="####" />
+      <img src={Mic} alt="####" />
       <h1>{store}</h1>
     </div>
   )
