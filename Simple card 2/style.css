@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  border-radius: 3rem;
+  overflow: hidden;
+  width: 30rem;
+  height: 20rem;
+}
+
+.card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card > .top {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.card > .top > h6 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.card > .top > .rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card > .top > .rating > img {
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 65%;
+  }
+}
